@@ -7,3 +7,5 @@ install:
 
 script:
 - jest --coverage --coverageReporters=text-lcov | coveralls
+
+os: osx
