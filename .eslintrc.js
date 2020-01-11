@@ -1,27 +1,47 @@
-// http://eslint.cn/docs/user-guide/configuring
-
 module.exports = {
-
-  root: true,                 // 限定配置文件的使用范围
-  parser: 'babel-eslint',
-  parserOptions: {             // 设置解析器选项
-    // ecmaVersion: 2018
+  env: {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
   },
-  env: {                      // 指定代码运行的宿主环境
-    browser: true,
+  parser: "babel-eslint",
+  parserOptions: {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
-  extends:[                  // 指定eslint规范
-    // 'plugin:vue/essential',
-    'standard',
-  ],
-  // plugins: ['vue'],        // 引入插件
 
-  // "off" 或 0 - 关闭规则
-  // "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
-  // "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
-  rules: {                                 // 启用额外的规则或覆盖默认的规则
-    // "extends": "eslint:recommended",    // 启用推荐规则
-  },
-  // "globals": { "var1": true,"var2": false }    // 配置全局变量
-}
+  extends: "standard",
 
+  rules: {
+    // new实例不赋值
+    'no-new': 0,
+    // allow paren-less arrow functions
+    'arrow-parens': 0,
+    // allow async-await
+    'generator-star-spacing': 0,
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // 引号类型，不限制
+    'quotes': 'off',
+    // 语句强制分号结尾
+    'semi': ['error', 'always'],
+    // 尾项逗号
+    'comma-dangle': 0,
+    // 判等符号使用，建议使用===或!==
+    'eqeqeq': ['warn', 'smart'],
+    // 驼峰命名
+    'camelcase': 'off',
+    'space-before-function-paren': 'off',
+    'space-before-blocks': 'off',
+    'spaced-comment': 'off',
+    'no-param-reassign': 'off',
+    'func-names': 'off',
+    'no-nested-ternary': 'off',
+    'no-unused-expressions': 'off',
+    'no-proto': 'off',
+    'no-plusplus': 'off',
+    'eol-last': 'off',
+    'arrow-body-style': 'off'
+  }
+};
