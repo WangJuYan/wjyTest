@@ -23,7 +23,7 @@ after_script:
 # - jest --coverage --coverageReporters=text-lcov | coveralls
 
 
-# os: osx
+os: osx
 
 # # Create the keychain with a password
 # security create-keychain -p travis ios-build.keychain
