@@ -1,22 +1,27 @@
 language: node_js
-# node_js: node
 node_js:
-  - 6
-
-cache:
-  directories:
-  - node_modules
-
-install:
-  - npm install
-  - npm global add node-coveralls
-
-script:
-  - npm run dev
-# - jest --coverage --coverageReporters=text-lcov | coveralls
-
+  - '12'
+  - '10'
+  - '8'
+  - '6'
+  - '4'
+  - '0.12'
+  - '0.10'
 after_script:
   - npm run coveralls
+
+# cache:
+#   directories:
+#   - node_modules
+
+# install:
+#   - npm install
+#   - npm global add node-coveralls
+
+
+# script:
+# - jest --coverage --coverageReporters=text-lcov | coveralls
+
 
 # os: osx
 
