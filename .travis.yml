@@ -2,11 +2,11 @@ language: node_js
 node_js: node
 cache: npm
 install:
-- npm install
-- npm global add node-coveralls
+# - npm install
+# - npm global add node-coveralls
 
 script:
-- jest --coverage --coverageReporters=text-lcov | coveralls
+# - jest --coverage --coverageReporters=text-lcov | coveralls
 
 # os: osx
 

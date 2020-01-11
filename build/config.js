@@ -17,7 +17,7 @@ const config = {
 
   dev: {
     host: 'localhost',
-    port: '3002',
+    port: '3006',
 
     useEslint: false,                                                // 是否使用ESlint
     showEslintErrorsInOverlay: true,                                 // 设置为true，ESlint-loader将始终返回警告。
