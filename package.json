@@ -79,7 +79,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.7.7"
   },
   "engines": {
-    "node": ">= 10.1.0",
+    "node": ">=4.0.0",
     "npm": ">= 6.3.0"
   },
   "browserslist": [
