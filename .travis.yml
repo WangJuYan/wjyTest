@@ -7,37 +7,25 @@ node_js:
   # - '4'
   - '0.12'
   # - '0.10'`
-after_script:
-  # - npm run test
+
+before_install:
+  - npm install coveralls --save-dev
+
+install:
+  - npm install
+  - npm global add node-coveralls
+
+cache: npm
+  # directories:
+  # - node_modules
+
+script:
   - npm run coveralls
-
-# cache:
-#   directories:
-#   - node_modules
-
-# install:
-#   - npm install
-#   - npm global add node-coveralls
-
-
-# script:
 # - jest --coverage --coverageReporters=text-lcov | coveralls
 
+after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken UyKJQZqkioZqmDyrvFz6YWaqwQ9XaA3t0 
+
+# after_success:
+#   - npm run coveralls
 
 os: osx
-
-# # Create the keychain with a password
-# security create-keychain -p travis ios-build.keychain
-
-# # Make the custom keychain default, so xcodebuild will use it for signing
-# security default-keychain -s ios-build.keychain
-
-# # Unlock the keychain
-# security unlock-keychain -p travis ios-build.keychain
-
-# # Add certificates to keychain and allow codesign to access them
-# security import ./Provisioning/certs/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-# security import ./Provisioning/certs/distribution.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-# security import ./Provisioning/certs/distribution.p12 -k ~/Library/Keychains/ios-build.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
-
-# security set-key-partition-list -S apple-tool:,apple: -s -k travis ios-build.keychain
