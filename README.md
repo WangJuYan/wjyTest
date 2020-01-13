@@ -1,4 +1,4 @@
-# travis CI [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![javascript style guide][standard-image]][standard-url]
+# travis CI [![Build Status][travis-image]][travis-url] [![Coverage Status](https://coveralls.io/repos/github/WangJuYan/wjyTest/badge.svg?branch=master)](https://coveralls.io/github/WangJuYan/wjyTest?branch=master) [![javascript style guide][standard-image]][standard-url]
 
 [travis-url]: https://www.travis-ci.org/WangJuYan/wjyTest
 [travis-image]: https://www.travis-ci.org/WangJuYan/wjyTest.svg?branch=master
