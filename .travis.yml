@@ -10,7 +10,7 @@ node_js:
 
 install:
   # - npm install
-  # - npm global add node-coveralls
+  - npm global add node-coveralls
   - npm install coveralls --save-dev
 
 # cache: npm
@@ -18,8 +18,8 @@ install:
   # - node_modules
 
 script:
-  - npm run coveralls
-# - jest --coverage --coverageReporters=text-lcov | coveralls
+  # - npm run coveralls
+- jest --coverage --coverageReporters=text-lcov
 
 after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken UyKJQZqkioZqmDyrvFz6YWaqwQ9XaA3t0 
 
