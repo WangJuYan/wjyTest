@@ -13,7 +13,7 @@ install:
   - npm global add node-coveralls
   - npm install coveralls --save-dev
 
-cache: npm
+# cache: npm
   # directories:
   # - node_modules
 
