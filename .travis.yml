@@ -15,18 +15,10 @@ cache:
   directories:
   - node_modules #缓存node_modules文件
 
-# after_success:
-#   - npm run coveralls
-
 script:
   - npm run coveralls
+  - jest coveralls
 
 after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken dvI1LR7V4h9gLMMp25pWAIhpDdUjTkfW9
-
-# jobs:
-#   include:
-#     - stage: Produce Coverage
-#       node_js: node
-#       script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 os: osx
