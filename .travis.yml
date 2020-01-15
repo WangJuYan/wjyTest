@@ -19,6 +19,6 @@ script:
   # 没有全局安装 codecov，所以要通过 npm 来运行 codecov
   # - npm run codecov
 
-after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken dvI1LR7V4h9gLMMp25pWAIhpDdUjTkfW9
+after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken NHoDMlPkslTL4p83e7TcIREKcnpJZvZ1I
 
 os: osx
