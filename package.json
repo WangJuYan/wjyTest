@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --progress --color --config ./build/webpack.config.dev.js",
     "build": "webpack --progress --color --config ./build/webpack.config.prod.js",
     "lint": "eslint --fix --ext .js,.vue src",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov"
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
