@@ -27,7 +27,7 @@ after_script:
   - git config user.email "1411460132@qq.com"
   - git add .
   - git commit -m "update"
-  - git push --force --quiet "https://${github_token}@${GH_REF}" master:dev #静态页面放在dev分支
+  - git push --force --quiet "https://${github_token}@${GH_REF}" master:travis_test #静态页面放在dev分支
   #- git push --force --quiet "https://${GH_TOKEN}@${你得项目地址(如果源码跟发布的不在一个分支 这里是分发布用的分支地址)，不带https}" master:master
 
 
