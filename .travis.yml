@@ -6,6 +6,9 @@ node_js:
   # - '6'
   # - '4'
 
+before_script:
+  - npm install
+
 install:
   - npm install --save-dev jest
   - npm install coveralls --save-dev
