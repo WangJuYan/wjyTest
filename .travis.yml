@@ -1,23 +1,23 @@
 language: node_js #指定运行环境
-node_js:
+# node_js:
   # - '12'
-  - '10'
+  # - '10'
   # - '8'
   # - '6'
   # - '4'
 
 install:
   # - npm install  
-  - npm install --save-dev jest
-  - npm install coveralls --save-dev
+  - cnpm install --save-dev jest
+  - cnpm install coveralls --save-dev
 
 cache:
   directories: node_modules #缓存node_modules文件
 
 script:
-  # - npm run coveralls
+  - npm run coveralls
 
-  - npm run test --coverage
+  # - npm run test --coverage
   # 没有全局安装 codecov，所以要通过 npm 来运行 codecov
   # - npm run codecov
 
@@ -32,7 +32,7 @@ after_script:
   #- git push --force --quiet "https://${GH_TOKEN}@${你得项目地址(如果源码跟发布的不在一个分支 这里是分发布用的分支地址)，不带https}" master:master
   # cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken 7cRO6F7KccTCqDdDtXctp4aXnqveU8OqU
 
-after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken 7cRO6F7KccTCqDdDtXctp4aXnqveU8OqU
+after_script: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js -repotoken 7cRO6F7KccTCqDdDtXctp4aXnqveU8OqU
 
 branches:
   only:
