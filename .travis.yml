@@ -1,5 +1,5 @@
 language: node_js #指定运行环境
-node_js: node_js: node
+node_js: node
   # - '12'
   # - '10'
   # - '8'
