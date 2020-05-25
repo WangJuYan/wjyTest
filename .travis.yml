@@ -10,7 +10,7 @@ install:
   # - npm install --save-dev jest
   # - npm install coveralls --save-dev
   - yarn global add jest
-  - yarn global add node-coveralls
+  - yarn global add coveralls
 
 cache: yarn
 
