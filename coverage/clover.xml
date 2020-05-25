@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1590378620590" clover="3.2.0">
-  <project timestamp="1590378620591" name="All files">
-    <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="17" coveredelements="17" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+<coverage generated="1590407659935" clover="3.2.0">
+  <project timestamp="1590407659935" name="All files">
+    <metrics statements="7" coveredstatements="6" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2" elements="17" coveredelements="14" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
     <file name="index1.js" path="/Users/a58/Documents/资料/travis CI test/WebpackTemplate/src/main/index1.js">
-      <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="6" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="6" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="2" type="cond" truecount="4" falsecount="0"/>
       <line num="7" count="1" type="stmt"/>
-      <line num="8" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="8" count="1" type="cond" truecount="2" falsecount="2"/>
       <line num="9" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
     </file>
   </project>
