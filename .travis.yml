@@ -1,8 +1,8 @@
 language: node_js #指定运行环境
 # node_js:
   # - '12'
-  # - '10'
-  - '8'
+  - '10'
+  # - '8'
   # - '6'
   # - '4'
 
@@ -41,3 +41,11 @@ after_script: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js -
 #     - GH_REF: github.com/WangJuYan/wjyTest.git    #仓库地址
 
 os: osx
+
+# v10.17.0
+# v12.13.0
+# v12.13.1
+# v13.0.1
+# v4.9.1
+# v6.17.1
+# v8.16.2
