@@ -1,20 +1,25 @@
 language: node_js #指定运行环境
-# node_js:
+node_js: node_js: node
   # - '12'
-  - '10'
+  # - '10'
   # - '8'
   # - '6'
   # - '4'
 
 install:
-  - npm install --save-dev jest
-  - npm install coveralls --save-dev
+  # - npm install --save-dev jest
+  # - npm install coveralls --save-dev
+  - yarn global add jest
+  - yarn global add node-coveralls
 
-cache:
-  directories: node_modules #缓存node_modules文件
+cache: yarn
+
+# cache:
+#   directories: node_modules, #缓存node_modules文件
 
 script:
-  - npm run coveralls
+  - yarn jest --coverage --coverageReporters=text-lcov | coveralls
+  # - npm run coveralls
   # - npm run test --coverage
   # 没有全局安装 codecov，所以要通过 npm 来运行 codecov
   # - npm run codecov
