@@ -8,8 +8,8 @@ language: node_js #指定运行环境
 
 install:
   # - npm install  
-  - cnpm install --save-dev jest
-  - cnpm install coveralls --save-dev
+  - npm install --save-dev jest
+  - npm install coveralls --save-dev
 
 cache:
   directories: node_modules #缓存node_modules文件
