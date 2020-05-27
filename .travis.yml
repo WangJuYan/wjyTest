@@ -18,7 +18,8 @@ cache: yarn
 #   directories: node_modules, #缓存node_modules文件
 
 script:
-  - jest --coverage --coverageReporters=text-lcov | coveralls
+  # - jest --coverage --coverageReporters=text-lcov | coveralls
+  - jest --coverage --coverageReporters=text-lcov
   # - npm run coveralls
   # - npm run test --coverage
   # 没有全局安装 codecov，所以要通过 npm 来运行 codecov
