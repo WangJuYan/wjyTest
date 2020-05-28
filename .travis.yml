@@ -9,9 +9,9 @@ node_js: node
 install:
   - npm install --save-dev jest
   - npm install coveralls --save-dev
+
   # - yarn global add jest
   # - yarn global add coveralls
-  # - yarn add --save-dev @babel/plugin-syntax-dynamic-import
 
 # cache: yarn
 
@@ -20,7 +20,7 @@ cache:
 
 script:
   # - jest --coverage --coverageReporters=text-lcov | coveralls
-  - jest --coverage
+  # - jest --coverage
   # - npm run coveralls
   # - npm run test --coverage
   # 没有全局安装 codecov，所以要通过 npm 来运行 codecov
@@ -39,20 +39,12 @@ after_script:
 
 # after_script: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js -repotoken 7cRO6F7KccTCqDdDtXctp4aXnqveU8OqU
 
-# branches:
-#   only:
-#     - master #触发持续集成的分支
+branches:
+  only:
+    - master #触发持续集成的分支
 
-# env:
-#   global:
-#     - GH_REF: github.com/WangJuYan/wjyTest.git    #仓库地址
+env:
+  global:
+    - GH_REF: github.com/WangJuYan/wjyTest.git    #仓库地址
 
 os: osx
-
-# v10.17.0
-# v12.13.0
-# v12.13.1
-# v13.0.1
-# v4.9.1
-# v6.17.1
-# v8.16.2
