@@ -7,16 +7,16 @@ node_js: node
   # - '4'
 
 install:
-  # - npm install --save-dev jest
-  # - npm install coveralls --save-dev
-  - yarn global add jest
-  - yarn global add coveralls
-  - yarn add --save-dev @babel/plugin-syntax-dynamic-import
+  - npm install --save-dev jest
+  - npm install coveralls --save-dev
+  # - yarn global add jest
+  # - yarn global add coveralls
+  # - yarn add --save-dev @babel/plugin-syntax-dynamic-import
 
-cache: yarn
+# cache: yarn
 
-# cache:
-#   directories: node_modules, #缓存node_modules文件
+cache:
+  directories: node_modules, #缓存node_modules文件
 
 script:
   # - jest --coverage --coverageReporters=text-lcov | coveralls
