@@ -11,6 +11,7 @@ install:
   # - npm install coveralls --save-dev
   - yarn global add jest
   - yarn global add coveralls
+  - yarn add --save-dev @babel/plugin-syntax-dynamic-import
 
 cache: yarn
 
