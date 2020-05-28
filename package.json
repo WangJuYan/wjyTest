@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Build the best web project template!",
   "scripts": {
-    "test": "jest",
     "start": "npm run dev",
     "dev": "webpack-dev-server --progress --color --config ./build/webpack.config.dev.js",
     "build": "webpack --progress --color --config ./build/webpack.config.prod.js",
     "lint": "eslint --fix --ext .js,.vue src",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "coveralls": "jest --coverage --coverageReporters=text-lcov"
   },
   "repository": {
     "type": "git",
