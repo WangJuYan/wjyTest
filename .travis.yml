@@ -27,7 +27,7 @@ after_script:
   - git push --force --quiet "https://${github_token}@${GH_REF}" #静态页面放在dev分支
   # - git push --force --quiet "https://${github_token}@${GH_REF}" master:travis_test #静态页面放在dev分支
   # - git push --force --quiet "https://${GH_TOKEN}@${你得项目地址(如果源码跟发布的不在一个分支 这里是分发布用的分支地址)}" master:master
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken 7cRO6F7KccTCqDdDtXctp4aXnqveU8OqU
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken IpUW3kFRlfOij9cYPGF82SmJFz1q9Bbgx
 
 branches:
   only:
