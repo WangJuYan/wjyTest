@@ -16,7 +16,6 @@ cache:
 script:
   - npm run coveralls
   
-
 after_script:
   - cd ./public
   - git init
