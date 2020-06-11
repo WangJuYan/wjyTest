@@ -6,12 +6,12 @@ node_js:
   # - '6'
   # - '4'
 
-# install:
+install:
   - npm install --save-dev jest
   - npm install coveralls --save-dev
 
-# cache:
-  # directories: node_modules, #缓存node_modules文件
+cache:
+  directories: node_modules, #缓存node_modules文件
 
 script:
   - npm run coveralls
