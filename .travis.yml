@@ -1,7 +1,7 @@
 language: node_js #指定运行环境
 node_js:
   # - '12'
-  - '10'
+  # - '10'
   - '8'
   # - '6'
   # - '4'
@@ -23,7 +23,7 @@ after_script:
   - git config user.email "1411460132@qq.com"
   - git add .
   - git commit -m "update"
-  - git push --force --quiet "https://${github_token}@${GH_REF}" master:travis_test #静态页面放在dev分支
+  - git push --force --quiet "https://${github_token}@${GH_REF}"  
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -repotoken IpUW3kFRlfOij9cYPGF82SmJFz1q9Bbgx
 
 branches:
